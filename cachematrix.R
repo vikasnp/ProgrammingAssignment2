@@ -65,3 +65,36 @@ cacheSolve <- function(x, ...)
 
     return(inverse)
 }
+
+# SAMPLE OUTPUT
+# > matr$set(matrix(5:8, 2, 2))
+# > cacheSolve(matr)
+# [,1] [,2]
+# [1,]   -4  3.5
+# [2,]    3 -2.5
+# > cacheSolve(matr)
+# Inverse available in cache
+# [,1] [,2]
+# [1,]   -4  3.5
+# [2,]    3 -2.5
+# > matr <- makeCacheMatrix(matrix(3:6, 2, 2))
+# > cacheSolve(matr)
+# [,1] [,2]
+# [1,]   -3  2.5
+# [2,]    2 -1.5
+# > cacheSolve(matr)
+# Inverse available in cache
+# [,1] [,2]
+# [1,]   -3  2.5
+# [2,]    2 -1.5
+# > matr$set(matrix(5:8, 2, 2))
+# > cacheSolve(matr)
+# [,1] [,2]
+# [1,]   -4  3.5
+# [2,]    3 -2.5
+# > cacheSolve(matr)
+# Inverse available in cache
+# [,1] [,2]
+# [1,]   -4  3.5
+# [2,]    3 -2.5
+# > 
